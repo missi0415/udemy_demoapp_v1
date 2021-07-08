@@ -5,7 +5,7 @@
       name="button"
       @click="getMsg"
     >
-    RailsからAPIを取得する
+      RailsからAPIを取得する
     </button>
     <div
       v-for="(msg, i) in msgs"
@@ -18,15 +18,19 @@
 
 <script>
 export default {
-  date () {
+  data () {
     return {
       msgs: []
     }
   },
   methods: {
-    getMsg (){
+    getMsg () {
       this.$axios.$get('/api/v1/hello')
-        .then(res => this.msgs.push(res))
+        .then(res => {
+          this.msgs.push(res)
+          console.log(res +"おした")
+          }
+        )
     }
   }
 }
