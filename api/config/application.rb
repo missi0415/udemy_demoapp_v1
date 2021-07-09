@@ -33,6 +33,7 @@ module App
 
     # i18nで使われるデフォルトのロケールファイルの指定(default :en)
     config.i18n.default_locale = :ja
+    # /config/locales/ja.yml を読み込む
 
     # $LOAD_PATHにautoload pathを追加しない(Zeitwerk有効時false推奨)
     config.add_autoload_paths_to_load_path = false
