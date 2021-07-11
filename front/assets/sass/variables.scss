@@ -1,0 +1,56 @@
+// custom変数 => https://vuetifyjs.com/en/customization/sass-variables/#sass-variables
+$material-light: (
+  'background': #f6f6f4
+);
+
+$grid-breakpoints: (
+  'ipad': 768px,
+  'mobile': 426px
+);
+
+$display-breakpoints: (
+  'ipad-and-down':
+  'only screen and (max-width: #{map-get($grid-breakpoints, 'ipad') - 1})',
+  'ipad-and-up':
+  'only screen and (min-width: #{map-get($grid-breakpoints, 'ipad')})',
+  'mobile-and-down':
+  'only screen and (max-width: #{map-get($grid-breakpoints, 'mobile') - 1})',
+  'mobile-and-up':
+  'only screen and (min-width: #{map-get($grid-breakpoints, 'mobile')})'
+);
+
+// 4つのブレークポイントが追加される
+// ipad-and-down
+// ipad-and-up
+// mobile-and-down
+// mobile-and-up
+
+// Globals
+$body-font-family: 'Work Sans', serif;
+$border-radius-root: 6px;
+$font-size-root: 14px;
+
+// Variables must come before the import
+$btn-letter-spacing: 0;
+$btn-font-weight: 400;
+$list-item-title-font-size: 0.929rem;
+$list-item-dense-title-font-size: 0.929rem;
+$list-item-dense-title-font-weight: initial;
+$fab-icon-sizes: (
+  'small': 20
+);
+$btn-sizes: (
+  'default': 41,
+  'large': 54
+);
+
+$headings: (
+  'h1': (
+    'size': 3.3125rem,
+    'line-height': 1.15em
+  ),
+  'h2': (
+    'size': 2.25rem,
+    'line-height': 1.5em
+  )
+);
