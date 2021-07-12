@@ -44,6 +44,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -66,6 +67,20 @@ export default {
       }
     }
   },
+
+  i18n: {
+    locales: ['ja','en'],
+    defaultLocale: 'ja',
+    vueI18n: {
+      fallbackLocale: 'ja',
+      silentFallbackWarn: true,
+      messages: {
+        ja: require('./locales/ja.json'),
+        en: require('./locales/en.json')
+      }
+    }
+  },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
