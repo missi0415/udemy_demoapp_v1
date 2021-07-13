@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <wel-app-bar />
+    <wel-app-bar
+      :menus="menus"
+      :img-height="imgHeight"
+    />
+
     <v-img
       dark
       src="https://picsum.photos/id/20/1920/1080?blur=5"
@@ -26,7 +30,7 @@
             中小企業に特化した事業計画策定ツール
           </h4>
         </v-col>
-      <v-row>
+      </v-row>
     </v-img>
     <v-sheet>
       <v-container
