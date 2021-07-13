@@ -4,7 +4,7 @@
       :menus="menus"
       :img-height="imgHeight"
     />
-
+    <app-logo />
     <v-img
       dark
       src="https://picsum.photos/id/20/1920/1080?blur=5"
@@ -62,6 +62,7 @@
 </template>
 
 <script>
+
 import welAbout from '~/components/welcome/welAbout'
 import welProducts from '~/components/welcome/welProducts'
 import welPrice from '~/components/welcome/welPrice'
@@ -69,6 +70,7 @@ import welContact from '~/components/welcome/welContact'
 import welCompany from '~/components/welcome/welCompany'
 import welAppBar from '~/components/welcome/welAppBar'
 import befLoginFooter from '~/components/beforeLogin/befLoginFooter'
+import AppLogo from '../components/ui/appLogo.vue'
 
 export default {
   components: {
@@ -78,7 +80,8 @@ export default {
     welContact,
     welCompany,
     welAppBar,
-    befLoginFooter
+    befLoginFooter,
+    AppLogo
   },
   data () {
     return {
