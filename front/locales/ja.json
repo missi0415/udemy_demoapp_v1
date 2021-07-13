@@ -1,4 +1,11 @@
 {
+  "menus":{
+    "about": "さいとについて",
+    "products": "製品",
+    "price": "価格",
+    "contact": "お問い合わせ",
+    "company": "会社情報"
+  }
   "title": {
     "signup": "会員登録",
     "login": "ログイン"
