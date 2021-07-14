@@ -10,6 +10,7 @@ ENV HOME=/${WORKDIR} \
     HOST=0.0.0.0 \
     API_URL=${API_URL} \
     NPM_CONFIG_PRODUCTION=false
+    
 
 # ENV check
 RUN echo ${HOME}
